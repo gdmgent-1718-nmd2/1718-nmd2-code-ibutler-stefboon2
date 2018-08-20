@@ -169,7 +169,8 @@
         float:right;
         border:none;
         color:white;
-        margin-top:2%
+        margin-top:2%;
+        margin-bottom:3%;
     }
 
     .card-body input[type=text]{
