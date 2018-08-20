@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Shop</title>
+  <title>Webhop</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,9 +15,27 @@
 <body>
 
 <div class="nav">
+        <div id="myNav" class="overlay" class="col-lg-6">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="About.html">About</a>
+                  <a href="Contact.html">Contact</a>
+                  <a href="Browse.html">Browse</a>
+                  <a href="index.html">Home</a>
+                </div>
+            </div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
                             <ul>
-                             <li><a href="Cart.html"><img src="../assets/Shopbag.png" width="20px" alt="Shopbag"></a></li>
-                            <li><a href="Shop.html"><img src="../assets/Shop.png" width="30px" class="cart" alt="Shop"></a></li>
+                             <li><a href="Shop.html"><img src="../assets/Shopbag.png" width="20px" alt="Shop"></a></li>
                              <li><a href="About.html">About</a></li>
                              <li><a href="Contact.html">Contact</a></li>
                              <li><a href="Browse.html">Browse</a></li>
@@ -27,7 +45,7 @@
 
 <div class="container">
 <div class="row">
-  <div class="col-lg-12">
+  <div class="col-sm-12 col-lg-12">
 <h2>Webshop</h2>
 <div class="col-lg-4"></div>
 <div class="underline col-lg-4">
@@ -37,164 +55,80 @@
 </div>
 
 <div class='row'>
-    <div class="col-lg-4">
-  
-      <div class="card">
-      <div class="card-img-top">
-    <h4>Meditation Cushion</h4>
-    <p>€45,95</p>
-    <a href="Yoga.html">
-      <img src="../assets/Cushion.jpg" width="100%" alt="cushion">
-      </a>
-      </div>
-      <div class="card-body">
+    <div class="col-lg-4 col-md-6 col-lg-12">
+    <div class="card">
+    <div class="card-img-top">
+    <img src="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/assets/Duo1.png" width="100%" alt="Duotone">
+
+
+</div>
+    <div class="card-body">
+    <h3>One Month</h3>
+    <p>Met deze module kan je gebruik maken van onze website voor 1 maand lang. 
+        Deze module geeft je toegang tot alle 'locked' toepassingen op onze website.</p>
                     <form action="" method="GET">
                         <select id="Aantal" name="Aantal">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                        </select>
-      <button class="primary" onclick="myFunction()">Add to cart</button>
-      <script>
-            function myFunction() {
-                alert("Dit item werd toegevoegd aan jouw winkelkar!");
-            }
-    </script>
-            
+                          <option>€25,95</option>
+                          <option>€25,95 + €15,95 (annulatie)</option>
+                        </select></form>
+
+<FORM METHOD="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/pages/CheckOut.html" ACTION="CheckOut.html">
+<INPUT TYPE="submit"  class="primary" VALUE="Choose Option">
+</FORM>   
  
       </div>
     </div>
  
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card">
             <div class="card-img-top">
-                    <h4>Rituals Body Mist</h4>
-                    <p>€23,95</p>
-                    <a href="Hamman.html">
-        <img src="../assets/Body_mist.jpg" width="100%" alt="bodymist">
-        </a>
-        <div class="card-body">
+                    <img src="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/assets/Duo2.png" width="100%" alt="Duotone">
+
                 <div class="card-body">
+                        <h3>One Year Acces</h3>
+                        <p>Met deze module kan je gebruik maken van onze website voor 1 jaar lang. 
+                        Deze module geeft je toegang tot alle 'locked' toepassingen op onze website.</p>
                         <form action="" method="GET">
                             <select id="Aantal" name="Aantal">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
+                              <option>€90</option>
+                              <option>€90 + €20 (annulatie) </option>
+
                             </select></form>
-        <button class="primary" onclick="myFunction()">Add to cart</button>
+                            <FORM METHOD="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/pages/CheckOut.html" ACTION="CheckOut.html">
+                                <INPUT TYPE="submit"  class="primary" VALUE="Choose Option">
+                                </FORM>
 
     </div>
     </div>
     </div>
     </div>
-    </div>
 
-    <div class="col-lg-4">
+
+    <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card">
             <div class="card-img-top">
-                    <h4>Cinnamon Candle</h4>
-                    <p>€40,00</p>
-        <a href="Books.html">
-            <a href="Reading.html">
-        <img src="../assets/Candle.jpg" width="100%" alt="candle"></a>
-        </a>
+                    <img src="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/assets/Duo3.png" width="100%" alt="Duotone">
+                   
         <div class="card-body">
+                <h3>Unlimited Acces</h3>
+                <p>Met de 'Unlimited' module. Hiermee heb je als bezoeker geen beperking in tijd. 
+                    Deze module geeft je toegang tot alle 'locked' toepassingen op onze website.</p>
                 <form action="" method="GET">
                         <select id="Aantal" name="Aantal">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                        </select>
-        <button class="primary" onclick="myFunction()">Add to cart</button>
-    </div>
-    </div>
-    </div>
-    </div></div>
+                          <option>€180</option>
+                          <option>€180</option>
+                        </select></form>
+                        <FORM METHOD="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/pages/CheckOut.html" ACTION="CheckOut.html">
+                            <INPUT TYPE="submit"  class="primary" VALUE="Choose Option">
+                            </FORM>
 
-    <div class='row'>
-            <div class="col-lg-4">
-          
-              <div class="card">
-              <div class="card-img-top">
-            <h4>Meditation Cushion</h4>
-            <p>45,95</p>
-            <a href="Yoga.html">
-              <img src="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/assets/Cushion.jpg" width="100%">
-              </a>
-              </div>
-              <div class="card-body">
-                    <form action="" method="GET">
-                            <select id="Aantal" name="Aantal">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                            </select>
-              <button class="primary" onclick="myFunction()">Add to cart</button>
-              <script>
-                    function myFunction() {
-                        alert("Dit item werd toegevoegd aan jouw winkelkar!");
-                    }
-            </script>
-                    
-         
-            </div>
-            </div>
-            </div>
-        
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="card-img-top">
-                            <h4>Rituals Body Mist</h4>
-                            <p>23,95</p>
-                            <a href="Hamman.html">
-                <img src="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/assets/Body_mist.jpg" width="100%">
-                </a>
-                <div class="card-body">
-                        <form action="" method="GET">
-                                <select id="Aantal" name="Aantal">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                </select>
-                <button class="primary" onclick="myFunction()">Add to cart</button>
-        
-            </div>
-            </div>
-            </div>
-            </div>
-        
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="card-img-top">
-                            <h4>Reading</h4>
-                            <p>Here you can read tips and tricks for a happy head.</p>
-                <a href="Books.html">
-                    <a href="Reading.html">
-                <img src="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/assets/Candle.jpg" width="100%"></a>
-                </a>
-                <div class="card-body">
-                        <form action="" method="GET">
-                                <select id="Aantal" name="Aantal">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                </select>
-                <button class="primary" onclick="myFunction()">Add to cart</button>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-</div>
-</div>
+    </div>
+    </div>
+    </div>
+    </div></div></div>
+
 
     <div class='row'>
             <footer class="col-lg-12 footer-distributed">

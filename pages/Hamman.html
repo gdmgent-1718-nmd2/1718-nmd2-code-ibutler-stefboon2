@@ -8,14 +8,33 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body>
         <div class="nav">
+                <div id="myNav" class="overlay" class="col-lg-6">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                          <a href="About.html">About</a>
+                          <a href="Contact.html">Contact</a>
+                          <a href="Browse.html">Browse</a>
+                          <a href="index.html">Home</a>
+                        </div>
+                    </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        
+        <script>
+        function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
                 <ul>
-                        <li><a href="Cart.html"><img src="../assets/Shopbag.png" width="20px"></a></li>
-                        <li><a href="Shop.html"><img src="../assets/Shop.png" width="30px" class="cart"></a></li>
+                        <li><a href="Shop.html"><img src="../assets/Shopbag.png" width="20px" alt="Shop"></a></li>
                  <li><a href="About.html">About</a></li>
                  <li><a href="Contact.html">Contact</a></li>
                  <li><a href="Browse.html">Browse</a></li>
@@ -42,6 +61,7 @@
       </div>
       <div class="card-body">
       <h3>Pomegranat Scrub</h3>
+      <p>Bij deze oefening leer je de onderbenen en bovenbenen ontspannen.</p>
       </div>
     </div>
     </div>
@@ -53,6 +73,7 @@
         <img src="../assets/Hair.jpg" width="100%" alt="hair"></a>
         <div class="card-body">
         <h3>Coco Hair Mask</h3>
+        <p>Bij deze oefening leer je de onderbenen en bovenbenen ontspannen.</p>
     </div>
     </div>
     </div>
@@ -65,6 +86,7 @@
         <img src="../assets/01_Banana_Recipes-to-Follow-For-the-Perfect-Homemade-Face-Mask_733045423-SSokolov-760x506.jpg" width="100%" alt="banana"></a>        
         <div class="card-body">
         <h3>Banana Lip Scrub</h3>
+        <p>Bij deze oefening leer je de onderbenen en bovenbenen ontspannen.</p>
     </div>
     </div>
     </div>

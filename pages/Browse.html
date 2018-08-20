@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Shop</title>
+  <title>Browse</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,9 +14,27 @@
 
 <body>
         <div class="nav">
+                <div id="myNav" class="overlay" class="col-lg-6">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                          <a href="About.html">About</a>
+                          <a href="Contact.html">Contact</a>
+                          <a href="Browse.html">Browse</a>
+                          <a href="index.html">Home</a>
+                        </div>
+                    </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        
+        <script>
+        function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
                 <ul>
-                        <li><a href="Cart.html"><img src="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/assets/Shopbag.png" width="20px"></a></li>
-                        <li><a href="Shop.html"><img src="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/assets/Shop.png" width="30px" class="cart"></a></li>
+                <li><a href="Shop.html"><img src="../assets/Shopbag.png" width="20px" alt="Shop"></a></li>
                  <li><a href="About.html">About</a></li>
                  <li><a href="Contact.html">Contact</a></li>
                  <li><a href="Browse.html">Browse</a></li>
@@ -41,7 +59,7 @@
       <div class="card-img-top">
     <a href="Yoga.html">
       <img src="../assets/Thrive-4.jpg" width="100%" alt="Yoga">
-      </a>
+    </a>
       </div>
       <div class="card-body">
       <h3>Meditatie</h3>

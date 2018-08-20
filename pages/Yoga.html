@@ -14,9 +14,27 @@
 
 <body>
         <div class="nav">
+                <div id="myNav" class="overlay" class="col-lg-6">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                          <a href="About.html">About</a>
+                          <a href="Contact.html">Contact</a>
+                          <a href="Browse.html">Browse</a>
+                          <a href="index.html">Home</a>
+                        </div>
+                    </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        
+        <script>
+        function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
                 <ul>
-                        <li><a href="Cart.html"><img src="../assets/Shopbag.png" width="20px" alt="Shopbag"></a></li>
-                        <li><a href="Shop.html"><img src="../assets/Shop.png" width="30px" class="cart" alt="Shop"></a></li>
+                        <li><a href="Shop.html"><img src="../assets/Shopbag.png" width="20px" alt="Shop"></a></li>
                  <li><a href="About.html">About</a></li>
                  <li><a href="Contact.html">Contact</a></li>
                  <li><a href="Browse.html">Browse</a></li>
@@ -43,6 +61,7 @@
       </div>
       <div class="card-body">
       <h3>Half Moon</h3>
+      <p>Bij deze oefening leer je de rug en armen ontspannen.</p>
       </div>
     </div>
     </div>
@@ -54,6 +73,7 @@
         <img src="../assets/Abrik.png " width="100%" alt="abrik"></a>
         <div class="card-body">
         <h3>Tip Toe</h3>
+        <p>Bij deze oefening leer je de onderbenen en bovenbenen ontspannen.</p>
     </div>
     </div>
     </div>
@@ -66,6 +86,7 @@
         <img src="../assets/Yogi.png " width="100%" alt="yogi"></a>
         <div class="card-body">
         <h3>The Eagle</h3>
+        <p>Bij deze oefening leer je de rug en armen ontspannen.</p>
   
     </div>
     </div>

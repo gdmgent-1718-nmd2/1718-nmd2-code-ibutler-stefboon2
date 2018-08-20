@@ -15,10 +15,27 @@
 
 <body>
     <div class="nav">
-
+            <div id="myNav" class="overlay" class="col-lg-6">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                      <a href="About.html">About</a>
+                      <a href="Contact.html">Contact</a>
+                      <a href="Browse.html">Browse</a>
+                      <a href="index.html">Home</a>
+                    </div>
+                </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+    <script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
         <ul>
-        <li><a href="Cart.html"><img src="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/assets/Shopbag.png" width="20px"></a></li>
-        <li><a href="Shop.html"><img src="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/assets/Shop.png" width="30px" class="cart"></a></li>
+                <li><a href="Shop.html"><img src="../assets/Shopbag.png" width="20px" alt="Shop"></a></li>
          <li><a href="About.html">About</a></li>
          <li><a href="Contact.html">Contact</a></li>
          <li><a href="Browse.html">Browse</a></li>
@@ -37,14 +54,18 @@
     </div>
   
 <div class="row">
-<div class="col-sm-6">
+<div class="col-lg-6 col-sm-12">
   <p>Vacay is een organisatie die vakantie op maat levert. Mensen met een druk dagelijks schema, die geen tijd 
     hebben voor een effectieve vakantie, kunnen bij ons terecht. Wij leren jou hoe te ontspannen gedurende drukke werkuren, hoe beter te slapen, te mediteren, enzoverder. 
   Vacay zorgt voor een ontspannende vakantie ervaring, gewoon van achter jouw computer scherm.</p>
+
+        <FORM METHOD="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/pages/Contact.html" ACTION="Contact.html">
+        <INPUT TYPE="submit"  class="basic" VALUE="Contacteer Ons!">
+        </FORM>
 </div>
 
-<div class="col-sm-6">
-  <img src="../assets/532969250-612x612.jpg" width="100%" alt="collega's">
+<div class="col-lg-6 col-sm-12">
+<img src="../assets/532969250-612x612.jpg" width="100%" alt="collega's" class="rounded">
 </div>
 </div>
 </div>

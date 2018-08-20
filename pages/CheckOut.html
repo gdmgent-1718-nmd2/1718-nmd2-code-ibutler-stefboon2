@@ -15,9 +15,27 @@
 
 <body>
         <div class="nav">
+                <div id="myNav" class="overlay" class="col-lg-6">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                          <a href="About.html">About</a>
+                          <a href="Contact.html">Contact</a>
+                          <a href="Browse.html">Browse</a>
+                          <a href="index.html">Home</a>
+                        </div>
+                    </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        
+        <script>
+        function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
                 <ul>
-                    <li><a href="Cart.html"><img src="../assets/Shopbag.png" width="20px" alt="Shopbag"></a></li>
-                    <li><a href="Shop.html"><img src="../assets/Shop.png" width="30px" class="cart" alt="Shop"></a></li>
+                 <li><a href="Shop.html"><img src="../assets/Shopbag.png" width="20px" alt="Shop"></a></li>
                  <li><a href="About.html">About</a></li>
                  <li><a href="Contact.html">Contact</a></li>
                  <li><a href="Browse.html">Browse</a></li>
@@ -26,7 +44,7 @@
  </div>
     <div class="container">    
     <div class="row">
-      <div class="col-lg-12">
+    <div class="col-lg-12 col-sm-12 col-md-12">
     <h2>Check Out</h2>
     <div class="col-lg-4"></div>
     <div class="underline col-lg-4">
@@ -36,35 +54,34 @@
     </div>
   
 <div class="row">
-        <div class="col-sm-6">
-                <form>
-                <p>First Name</p>
-                <input type="text" name="firstname" placeholder="Enter your first name"></input>
-                <p>Last Name</p>
-                <input type="text" email="lastnaùe" placeholder="Enter your last name"></input>
-                <p>Email Adress</p>
-                <input type="text" name="emailadres" placeholder="Enter your email here"></input>
-                 </form>
-                
-                </div>
+<div class="col-lg-6 col-md-6 col-sm-12">
+<form>
+<p>First Name</p>
+<input type="text" name="firstname" placeholder="Enter your first name"></input>
+<p>Last Name</p>
+<input type="text" email="lastnaùe" placeholder="Enter your last name"></input>
+<p>Email Adress</p>
+<input type="text" name="emailadres" placeholder="Enter your email here"></input>
+</form>
+</div>
 
-<div class="col-sm-6">
+<div class="col-lg-6 col-md-6 col-sm-12">
 <form>
 <p>Factuur adres</p>
 <input type="text" name="firstname" placeholder="Enter your adres here"></input>
-<p>Lever Adress (optional)</p>
+<p>Lever adres (optional)</p>
 <input type="text" email="email" placeholder="Enter your adress here"></input>
+<form>  
+<select id="Aantal" name="Aantal" class="margin-top">
+<option>Payment type</option>
+<option>KBC Mobile</option>
+</select></form>
 
-
-        <form action="" method="GET">
-            <select id="Aantal" name="Aantal">
-              <option>Payment type</option>
-              <option>KBC Mobile</option>
-            </select>
-
-<button action="" type="submit" class="basic">Send</button>
-
- </form>
+             
+<FORM METHOD="/Users/steffiboone/Code/1718-nmd2-code-ibutler-stefboon2/pages/Browse.html" ACTION="Browse.html">
+<INPUT TYPE="submit"  class="tertiary" VALUE="PAY">
+</FORM>
+</div>
 
 </div>
 </div>
